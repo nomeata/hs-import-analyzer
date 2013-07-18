@@ -150,7 +150,7 @@ printHTML interesting pkgs stats = do
             script ! src (toValue "script.js") $ mempty
         body $ HTML.div ! HTML.id (toValue "content") $ do
             h1 $ toMarkup "Import analysis"
-            p $ toMarkup $ "This page analysis the import statements of " ++ show (length pkgs) ++ " packages and counts the number of imports of each module and symbol from the list of interesting packages (in this case: " ++ concat (intersperse ", " interesting) ++ ")."
+            p $ toMarkup $ "This page analyses the import statements of " ++ show (length pkgs) ++ " Haskell packages and counts the number of imports of each module and symbol from the list of interesting packages (in this case: " ++ concat (intersperse ", " interesting) ++ ")."
             table $ do
                 thead $ tr $ do
                     th mempty
