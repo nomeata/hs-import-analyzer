@@ -164,7 +164,7 @@ printHTML interesting pkgs stats = do
                                 Nothing -> modRow m n
                             | ((m,i),n) <- stats ]
             p $ do
-                toMarkup $ "These packages were analized in the making of this report: "
+                toMarkup $ "These packages were analyzed in the making of this report: "
                 toMarkup $ concat $ intersperse ", " pkgs
             HTML.div ! HTML.id (toValue "footer") $ do
                 p $ do
@@ -172,7 +172,7 @@ printHTML interesting pkgs stats = do
                     a ! href (toValue "mailto:mail@joachim-breitner.de") $
                         toMarkup "Joachim Breitner"
                     toMarkup ". "
-                    a ! href (toValue "http://darcs.nomeata.de/import-analizer") $ 
+                    a ! href (toValue "http://darcs.nomeata.de/import-analyzer") $ 
                         toMarkup "Source"
                     toMarkup " available."
  where
