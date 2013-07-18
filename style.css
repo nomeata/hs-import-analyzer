@@ -1,0 +1,119 @@
+
+* { margin: 0; padding: 0 }
+
+/* Is this portable? */
+html {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: white;
+  color: black;
+  text-align: left;
+  min-height: 100%;
+  position: relative;
+}
+#content {
+ margin: 0 auto;
+ padding: 0 2em 6em;
+}
+
+p {
+  margin: 0.8em 0;
+}
+
+a { text-decoration: none; }
+a[href]:link { color: rgb(196,69,29); }
+a[href]:visited { color: rgb(171,105,84); }
+a[href]:hover { text-decoration:underline; }
+
+/* @end */
+ 
+body {
+ font:13px/1.4 sans-serif;
+ *font-size:small; /* for IE */
+ *font:x-small; /* for IE in quirks mode */
+}
+
+h1 { font-size: 146.5%; /* 19pt */ } 
+h2 { font-size: 131%;   /* 17pt */ }
+h3 { font-size: 116%;   /* 15pt */ }
+h4 { font-size: 100%;   /* 13pt */ }
+h5 { font-size: 100%;   /* 13pt */ }
+
+table {
+    font-size:inherit;
+    font:100%;
+}
+
+.caption, h1, h2, h3, h4, h5, h6 { 
+  font-weight: bold;
+  color: rgb(78,98,114);
+  margin: 0.8em 0 0.4em;
+}
+
+* + h1, * + h2, * + h3, * + h4, * + h5, * + h6 {
+  margin-top: 2em;
+}
+
+h1 + h2, h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
+  margin-top: inherit;
+}
+
+.collapser {
+  background-image: url(data:image/gif;base64,R0lGODlhCQAJAJEAAP7+/oKCggICAgAAACwAAAAACQAJAAACEYyPoAvG614LQFg7ZZbxoR8UADs=);
+  background-repeat: no-repeat;
+}
+.expander {
+  background-image: url(data:image/gif;base64,R0lGODlhCQAJAJEAAP7+/oKCggICAgAAACwAAAAACQAJAAACFIyPoAu2spyCyol7W3hxz850CFIAADs=);
+  background-repeat: no-repeat;
+}
+.collapser,
+.expander {
+  background-position: 0 0.4em;
+}
+.collapser, .expander {
+  padding-left: 14px;
+  margin-left: -14px;
+  cursor: pointer;
+}
+
+#footer {
+  background: #ddd;
+  border-top: 1px solid #aaa;
+  padding: 0.5em 0;
+  color: #666;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3em;
+}
+
+table {
+  width: 100%;
+}
+
+.expander, .collapser, .name, .count {
+  width :1px;
+}
+
+.count {
+  text-align:right
+}
+
+.graph {
+}
+.modrow .bar {
+  background: blue;
+  height: 1em;
+}
+.idrow .bar {
+  background: lightblue;
+  height: 1em;
+}
+th {
+  white-space:nowrap
+}
